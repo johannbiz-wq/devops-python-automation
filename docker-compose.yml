@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  health-monitor:
+    build: .
+    container_name: python-health-checker
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
