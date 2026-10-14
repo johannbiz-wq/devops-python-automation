@@ -34,3 +34,6 @@ def check_endpoints(urls):
 if __name__ == "__main__":
     report_data = check_endpoints(ENDPOINTS)
     print("Chequeo finalizado con éxito.")
+
+# Forzar un error a propósito para probar el pipeline
+raise Exception("¡Alerta! Fallo simulado en el sistema de monitorización.")
